@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 set -e
 
 # Input file: mock_data.tsv
