@@ -6,9 +6,9 @@ import boto3
 s3= boto3.client('s3', region_name= 'us-east-1')
 bucket_name='ds2002-zgb8ts'
 object_name='minion.gif'
-expires_in=604800
+expires_in= 604800
 
-response= client.generate_presigned_url('get_object', 
+response= s3.generate_presigned_url('get_object', 
 Params={'Bucket':bucket_name,'Key':object_name},
 ExpiresIn=expires_in)
 
