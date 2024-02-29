@@ -1,6 +1,13 @@
 #!/bin/bash
 
 
+curl https://d2r55xnwy6nx47.cloudfront.net/uploads/2024/02/DefaultModeExplainer-byKristinaArmitage-Lede-scaled.webp > rest.webp
+aws s3 cp rest.webp s3://ds2002-zgb8ts
 
-https://ds2002-zgb8ts.s3.us-east-1.amazonaws.com/penguin1.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYS2NRLWO5HNPDNCC%2F20240228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240228T000310Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Security-Token=FwoGZXIvYXdzEAkaDCnwIe%2FowopwQOITcCLEARFDwalSMVSL4UGquvQc%2FS1Y6XBx%2BK7FIqP22jcwk8jE5EqLxnmsR%2FSdIcBYRtbh%2FswFxMyMmoQv%2FEIn7YmUDw45LndawDMo%2B5FipLKwrXVvupUsSOwBwRw1LmUcmF3XFJvznnM%2Fla%2BY8Rn%2BIN2N0lwYGbCYRB4XdTYfKB%2FxAQYbRagDnxElSWbNbUHtbGFm9XowXvavqklSB2BaU9ozbGW27YyBn2RoaAl1XcfEF%2FXDlVAQn6eTjliypt7HiCnpNAXTr8cow%2BD5rgYyLQ2ffYrPW%2By7zPk13OM1ZhXRDcG2thQFtkURbVboFcVpLVPr59sSaIXYP5GV%2Fw%3D%3D&X-Amz-Signature=06b443932712d5bd38877e62262fd2da726324a3a6b9d195c30df4abad8c9762
+# https://s3.amazonaws.com/ds2002-zgb8ts/rest.webp
+
+aws s3 ls s3://ds2002-zgb8ts
+aws s3 presign --expires-in 604800 s3://ds2002-zgb8ts/rest.webp
+
+#Output: https://ds2002-zgb8ts.s3.us-east-1.amazonaws.com/rest.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYS2NRLWOSPAL2AF6%2F20240229%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240229T200928Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Security-Token=FwoGZXIvYXdzEDUaDIuKbTipedbkJGzwlCLEAfilQjgerVnSEZytI7EypFg%2FzTcfLl2EWuHxSHjpXU%2B%2F88REv2rPVv8EO7ySDhc6B4pW%2B2joH0z%2FtN1e5EyV13UGzJWTktBr4AMHJakDn8enol1v%2FfCTc%2BBWs4sxHYY%2BjfEl7wvLXMLRC3%2Flpz5D0qY87gOS7M6NbgrPvJauEYnNuje4Gk7BA7fWjp3hooSMM7tqknk3r8elwSK1uralaUCHM%2B%2BrSifkX7y5TJuwSIp4XOSMn37EQsBp8hj05cFEr2TpnAooqMGDrwYyLe22FkbjeWvEx8epxpNYlQ7bueKBNRMRQLkOEO31plu1cBuL3GBncy7hIcVQLw%3D%3D&X-Amz-Signature=87d2f9ec1db56c46f4ee922f5da9cee309259d7d9f2989458f7caabb278afca8
 
