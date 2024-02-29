@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+
+https://ds2002-zgb8ts.s3.us-east-1.amazonaws.com/penguin1.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYS2NRLWO5HNPDNCC%2F20240228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240228T000310Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&X-Amz-Security-Token=FwoGZXIvYXdzEAkaDCnwIe%2FowopwQOITcCLEARFDwalSMVSL4UGquvQc%2FS1Y6XBx%2BK7FIqP22jcwk8jE5EqLxnmsR%2FSdIcBYRtbh%2FswFxMyMmoQv%2FEIn7YmUDw45LndawDMo%2B5FipLKwrXVvupUsSOwBwRw1LmUcmF3XFJvznnM%2Fla%2BY8Rn%2BIN2N0lwYGbCYRB4XdTYfKB%2FxAQYbRagDnxElSWbNbUHtbGFm9XowXvavqklSB2BaU9ozbGW27YyBn2RoaAl1XcfEF%2FXDlVAQn6eTjliypt7HiCnpNAXTr8cow%2BD5rgYyLQ2ffYrPW%2By7zPk13OM1ZhXRDcG2thQFtkURbVboFcVpLVPr59sSaIXYP5GV%2Fw%3D%3D&X-Amz-Signature=06b443932712d5bd38877e62262fd2da726324a3a6b9d195c30df4abad8c9762
+
