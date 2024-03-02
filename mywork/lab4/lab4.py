@@ -2,12 +2,26 @@
 
 
 import boto3
+from botocore.exceptions import ClientError
 
 s3= boto3.client('s3', region_name= 'us-east-1')
 bucket_name='ds2002-zgb8ts'
 object_name='minion.gif'
 expires_in= 604800
 
+
+# Reusable code
+def get_presigned_url(bucket_name, object_name, expiration=604800): 
+  s3= boto3.client('s3')
+  try:
+    response= s3.generate_presigned_url('get_object', Params={'Bucket': bucket_name, 'Key': object_name}, ExpiresIn= expiration)
+  except ClientError as e:
+    return e
+  print(response)
+
+get_presigned_url('ds2002-zgb8ts', 'minion.gif', expiration= 604800)
+
+# One time use
 response= s3.generate_presigned_url('get_object', 
 Params={'Bucket':bucket_name,'Key':object_name},
 ExpiresIn=expires_in)
