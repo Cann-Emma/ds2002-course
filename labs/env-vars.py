@@ -2,7 +2,7 @@
 
 
 import os
-FAVNUM= "4"
+FAV_NUM= "4"
 MAJOR= "Psychology"
 YEAR= "third"
 
